@@ -492,12 +492,16 @@ main{
 }
 
 .popup-menu__body{
+    color: white;
     height: inherit;
     width: 300px;
     background-color: black;
 }
 
-.popup-menu__content{padding: 15px;}
+.popup-menu__content{
+    padding: 15px;
+    position: relative;
+}
 
 .popup-menu__heading{
     font-size: 2em;
@@ -514,6 +518,14 @@ main{
     border-left: 2px solid white;
     padding-left: 10px;
     color:white;
-    font-size: 1.9em;
+    font-size: 1.7em;
     margin-bottom: 20px;
+}
+
+.popup-menu__close{
+    font-size: 3em;
+    position: absolute;
+    top: -7px;
+    right: 0px;
+    transform: rotate(45deg);
 }
