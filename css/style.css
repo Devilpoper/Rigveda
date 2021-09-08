@@ -122,70 +122,10 @@ li a{color: inherit;}
 @media (max-width: 750px){
     .slogan{display: none;}
     .navigation-panel{display: none;}
-    #side-checkbox {display: none;}
-    .hide{
-        display: block;
+    .image-button{
+        margin: 0 20px 0 auto;
     }
-    .side-panel {
-        position: fixed;
-        z-index: 999999;
-        top: 0;
-        left: -360px;
-        background: black;
-        transition: all 0.5s;  
-        width: 320px;
-        height: 100vh;
-        box-shadow: 10px 0 20px rgba(0,0,0,0.4);
-        color: #FFF;
-        padding: 40px 20px;
-    }
-    .side-title {
-        font-size: 2.1em;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        border-bottom: 2px solid white;
-    }
-    /* Оформление кнопки на странице */
-    .side-button-1-wr {
-        display: inline;
-        height:inherit;
-        padding-top:17px;
-        margin-right: 10px;
-        margin-left: auto;
-        text-align: center; /* Контейнер для кнопки, чтобы было удобнее ее разместить */
-    }
-    .side-button-1 .side-b {
-        position: relative;
-        cursor: pointer;
-    }
-    /* Переключатели кнопки 1 */
-    .side-button-1 .side-close {
-        display: none;
-    }
-    #side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
-        display: none;
-    }
-    #side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
-        display: block;
-    }
-    #side-checkbox:checked + .side-panel {
-        left: 0;
-    }
-    /* Оформление кнопки на панеле */
-    .side-button-2 {
-        font-size: 30px;
-        border-radius: 20px;
-        position: absolute;
-        z-index: 1;
-        top: 8px;
-        right: 8px;
-        cursor: pointer;
-        transform: rotate(45deg);
-        color: white;   
-        transition: all 280ms ease-in-out;   
-    }
-
-    
+    .image-button img{font-size: 1.3em;}
 }
 
 main{
