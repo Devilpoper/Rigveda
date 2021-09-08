@@ -500,15 +500,20 @@ main{
 .popup-menu__content{padding: 15px;}
 
 .popup-menu__heading{
-    font-family: 'Montserrat-Bold';
-    font-size: 1.7em;
+    font-size: 2em;
     color: white;
-    border-bottom: 3px solid white;
-    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+    padding: 10px 30px 5px 0px;
+}
+
+.menu-ul{
+    margin-top:15px;
 }
 
 .menu-ul li{
+    border-left: 2px solid white;
+    padding-left: 10px;
     color:white;
-    font-size: 1.7em;
+    font-size: 1.9em;
     margin-bottom: 20px;
 }
