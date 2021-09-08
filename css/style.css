@@ -111,7 +111,7 @@ li a{color: inherit;}
 }
 
 .side-button-1-wr, .hide{display: none;}
-
+.image-button{display: none;}
 .hide-panel-navigation li{
     font-size: 1.7em;
     border-left: 2px solid white;
@@ -119,7 +119,8 @@ li a{color: inherit;}
     padding-left: 10px;
 }
 
-@media (max-width: 750px){
+@media (max-width: 870px){
+    .image-button{display: block;}
     .slogan{display: none;}
     .navigation-panel{display: none;}
     .image-button{margin: 0 20px 0 auto;}
@@ -485,10 +486,21 @@ main{
 .popup-menu{
     position: fixed;
     width: 100%;
-    height: 120%;
+    height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+    transform: translate(-100%, 0px);
+}
+
+.popup-menu:target{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px,0px);
 }
 
 .popup-menu__body{
