@@ -286,10 +286,13 @@ main{
     margin-bottom: 25px;
 }
 
-.details a{
-    font-size: 1.2em;
+.details{
+    padding: 10px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    justify-content: center;
+    font-size: 1.1em;
     font-family: 'Montserrat-Bold';
-    padding: 15px;
 }
 
 .wrapper-payment .first_text{
