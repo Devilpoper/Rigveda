@@ -34,25 +34,8 @@
             </ul>
         </div>
 
-        <div class="side-button-1-wr">
-            <label class="side-button-1" for="side-checkbox">
-                <div class="side-b side-open"><img src="img/sidebar.png" width=50px></div>
-                <div class="side-b side-close"><img src="img/sidebar.png" width=50px></div>
-            </label>
-        </div>
-    </div>
-
-    <div class="hide">
-        <input type="checkbox" id="side-checkbox" />
-        <div class="side-panel">
-            <label class="side-button-2" for="side-checkbox">+</label>
-            <div class="side-title">Важная информация:</div>
-            <ul class="hide-panel-navigation">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="#popup">Контакты</a></li>
-                <li><a href="#">Вакансии</a></li>
-                <li><a href="#">О нас</a></li>
-            </ul>
+        <div class="image-button">
+            <a href="#popup-menu"><img src="img/sidebar.png" alt="sidebar" width=50px></a>
         </div>
     </div>
 </header>
@@ -75,5 +58,43 @@
             Физическая охрана школы – это гарантия безопасности наших детей!
         </div>
     </div> 
+
+    <footer>
+        <div class="text-for-footer">
+            <ul class="list-tovar">
+                <li><a href="">Охрана частного дома</a></li>
+                <li><a href="">Охрана квартиры</a></li>
+                <li><a href="">Охрана гаража</a></li>
+                <li><a href="">Охрана бизнеса</a></li>
+                <li><a href="">Физическая охрана</a></li>
+                <li><a href="">Охрана школы</a></li>
+            </ul>
+        </div>
+        <div class="text-for-footer">
+            <ul class="list-tovar">
+                <li><a href="">Тревожная кнопка</a></li>
+                <li><a href="">Пожарная сигнализация</a></li>
+                <li><a href="">Видеонаблюдение</a></li>
+                <li><a href="">Охранная сигнализация</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div id="popup-menu" class="popup-menu">
+        <a href="#" class="popup-area"></a>
+        <div class="popup-menu__body">
+            <div class="popup-menu__content">
+                <a href="#" class="popup-menu__close">+</a>
+                <div class="popup-menu__heading">Важная инфорация:</div>
+                <div class="list-menu">
+                    <ul class="menu-ul">
+                        <li><a href="#popup">Контакты</a></li>
+                        <li><a href="">Вакансии</a></li>
+                        <li><a href="">О нас</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
