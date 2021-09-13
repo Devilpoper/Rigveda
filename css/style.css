@@ -69,7 +69,7 @@ header{
     height: inherit;
 }
 
-figure img{
+ .wrapper-header figure img{
     padding-top: 7px;
     height: 85%;
 }
@@ -83,17 +83,14 @@ figure img{
 .navigation-panel{margin-left: auto;}
 li a{color: inherit;}
 
-.navigation li{
+.navigation-panel ul li{
     float: right;
     margin-left: .5vw;
     margin-right: 50px;
     font-size: 1.7em;
 }
 
-.rigveda{
-    position: relative;
-    bottom: 3px;
-}
+
 
 .name-company{
     color:  #ffee57;
@@ -110,14 +107,8 @@ li a{color: inherit;}
     color:white;
 }
 
-.side-button-1-wr, .hide{display: none;}
 .image-button{display: none;}
-.hide-panel-navigation li{
-    font-size: 1.7em;
-    border-left: 2px solid white;
-    margin-bottom: 20px;
-    padding-left: 10px;
-}
+
 
 @media (max-width: 870px){
     .image-button{display: block;}
@@ -154,7 +145,6 @@ main{
     display: flex;
     font-family: 'Montserrat-Bold';
     background-color: #ffee57;
-    text-align: center;
     align-items: center;
     border-bottom: 1px solid #3f4042;
     font-size: 1.8em;
@@ -169,7 +159,7 @@ main{
 }
 
 .shadow-1{display: none;}
-.image{padding: 10px;}
+
 
 .subgrid{
     height: 100%;
@@ -219,15 +209,6 @@ main{
 }
 
 /*----------------Контакты---------------*/
-
-.main-contacts{
-    max-width: 800px;
-    height: 87vh;
-    margin: 2vw auto;
-    border-radius: 15px;
-    box-shadow: 1px 1px 20px;
-    padding: 15px;
-}
 
 .heading{
     font-size: 2em;
