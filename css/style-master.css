@@ -83,11 +83,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat-Extra-Bold";
   src: url("../font/Montserrat-ExtraBold.ttf");
 }
-.image-komplect-ajax, .image-komplect-ritm {
-  margin-top: 15px;
-  background-size: cover;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #dfdfdf;
@@ -403,34 +398,10 @@ main {
   margin-bottom: 10px;
 }
 
-.image-komplect {
-  margin-top: 15px;
-  background-image: url(../img/product/kimplect-nord-mini.jpg);
-  background-size: cover;
+.image-product img {
+  width: 100%;
 }
 
-.image-komplect-ritm {
-  max-width: 800px;
-  background-image: url(../img/product/ritm.png);
-}
-
-.image-komplect-ajax {
-  background-image: url(../img/product/ajax.png);
-}
-
-@media (min-width: 950px) {
-  .image-komplect {
-    height: 380px;
-  }
-
-  .image-komplect-ritm {
-    height: 380px;
-  }
-
-  .image-komplect-ajax {
-    height: 380px;
-  }
-}
 .flex-text-bt {
   display: -webkit-box;
   display: -ms-flexbox;

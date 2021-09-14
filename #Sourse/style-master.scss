@@ -277,27 +277,10 @@ main{
     }
 }
 
-.image-komplect{
-    margin-top: 15px;
-    background-image: url(../img/product/kimplect-nord-mini.jpg);
-    background-size: cover;  
-}
-
-.image-komplect-ritm{
-    max-width: 800px;
-    @extend %image-template;
-    background-image: url(../img/product/ritm.png);
-}
-
-.image-komplect-ajax{
-    @extend %image-template;
-    background-image: url(../img/product/ajax.png);
-}
-
-@media (min-width: 950px) {
-    .image-komplect{height: 380px;}
-    .image-komplect-ritm{height: 380px;}
-    .image-komplect-ajax{height: 380px;}
+.image-product{
+    img{
+        width: 100%;
+    }
 }
 
 .flex-text-bt{
