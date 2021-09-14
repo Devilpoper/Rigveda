@@ -19,7 +19,7 @@ $back-color: rgb(223, 223, 223);
 $grey-black: rgb(26, 25, 25);
 $yellow-color: #ffee57;
 
-%image-komplect{
+%image-template{
     margin-top: 15px;
     background-size: cover;
 }
@@ -282,18 +282,19 @@ main{
 }
 
 .image-komplect{
-    @extend %image-komplect;
+    margin-top: 15px;
     background-image: url(../img/product/kimplect-nord-mini.jpg);
+    background-size: cover;  
 }
 
 .image-komplect-ritm{
     max-width: 800px;
-    @extend %image-komplect;
+    @extend %image-template;
     background-image: url(../img/product/ritm.png);
 }
 
 .image-komplect-ajax{
-    @extend %image-komplect;
+    @extend %image-template;
     background-image: url(../img/product/ajax.png);
 }
 

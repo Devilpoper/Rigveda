@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat-Extra-Bold";
   src: url("../font/Montserrat-ExtraBold.ttf");
 }
-.image-komplect-ajax, .image-komplect-ritm, .image-komplect {
+.image-komplect-ajax, .image-komplect-ritm {
   margin-top: 15px;
   background-size: cover;
 }
@@ -441,7 +441,9 @@ main {
 }
 
 .image-komplect {
+  margin-top: 15px;
   background-image: url(../img/product/kimplect-nord-mini.jpg);
+  background-size: cover;
 }
 
 .image-komplect-ritm {
