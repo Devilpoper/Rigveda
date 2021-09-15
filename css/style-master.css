@@ -88,7 +88,7 @@ body {
   background-color: #dfdfdf;
 }
 
-header {
+.header {
   color: white;
   margin: 0 auto;
   width: 97%;
@@ -96,8 +96,7 @@ header {
   background-color: #1a1919;
   border-bottom: 1px solid #3f4042;
 }
-
-.wrapper-header {
+.header__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,42 +105,41 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.wrapper-header figure {
+.header__logo {
   display: inline-block;
   height: inherit;
 }
-.wrapper-header figure img {
+.header__img {
   padding-top: 7px;
   height: 85%;
 }
-.wrapper-header .name-company {
+.header__title {
   color: #ffee57;
   font-weight: normal;
   font-size: 2em;
   letter-spacing: 0.5%;
   margin-left: 15px;
 }
-.wrapper-header .name-company .rigveda {
+.header__link {
   position: relative;
   bottom: 3px;
 }
-.wrapper-header .name-company .slogan {
+.header__slogan {
   padding-top: 5px;
   border-top: 1px solid #ffee57;
   font-size: 0.5em;
   color: white;
 }
-.wrapper-header .navigation-panel {
+.header__nav {
   margin-left: auto;
 }
-.wrapper-header .navigation-panel ul li {
+.header__item {
   float: right;
   margin-left: 0.5vw;
   margin-right: 50px;
   font-size: 1.7em;
 }
-
-.image-button {
+.header__button {
   display: none;
 }
 

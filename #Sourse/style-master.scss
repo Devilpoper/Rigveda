@@ -30,66 +30,63 @@ body{
     background-color: $back-color;
 }
 
-header{
+.header{
     color: white;
     margin: 0 auto;
     width: 97%;
     height: 80px;
     background-color: $grey-black;
     border-bottom: 1px solid #3f4042;
-}
 
-.wrapper-header{
-    display: flex;
-    height: inherit;
-    align-items: center; 
-
-    figure{
-        display: inline-block;
+    &__body{
+        display: flex;
         height: inherit;
-
-        img{
-            padding-top: 7px;
-            height: 85%;
-        }
+        align-items: center; 
     }
 
-    .name-company{
+    &__logo{
+        display: inline-block;
+        height: inherit;
+    }
+
+    &__img{
+        padding-top: 7px;
+        height: 85%;
+    }
+
+    &__title{
         color: $yellow-color;
         font-weight: normal;
         font-size: 2em;
         letter-spacing: 0.5%;
         margin-left: 15px;
-        
-        .rigveda{
-            position: relative;
-            bottom: 3px;
-        }
+    }
 
-        .slogan{
-            padding-top: 5px;
-            border-top: 1px solid $yellow-color;
-            font-size: .5em;
-            color:white;
-        }
-    } 
+    &__link{
+        position: relative;
+        bottom: 3px;
+    }
 
-    .navigation-panel{
-        margin-left: auto;
-        
-        ul{
-            li{
-                float: right;
-                margin-left: .5vw;
-                margin-right: 50px;
-                font-size: 1.7em;
-            }
-        }
+    &__slogan{
+        padding-top: 5px;
+        border-top: 1px solid $yellow-color;
+        font-size: .5em;
+        color:white;
+    }
+
+    &__nav{margin-left: auto;}
+
+    &__item{
+        float: right;
+        margin-left: .5vw;
+        margin-right: 50px;
+        font-size: 1.7em;
     }
     
-    
+    &__button{display: none;}
 }
-.image-button{display: none;}
+
+
 
 @media (max-width: 870px){
     .slogan{display: none;}
