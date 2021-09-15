@@ -74,31 +74,31 @@ body{
         color:white;
     }
 
-    &__nav{margin-left: auto;}
+    &__nav{
+        margin: 0 30px 0 auto;
+        height: inherit;
+        width: 400px;
+    }
+
+    &__list{
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     &__item{
-        float: right;
-        margin-left: .5vw;
-        margin-right: 50px;
         font-size: 1.7em;
     }
-    
+
     &__button{display: none;}
 }
 
-
-
 @media (max-width: 870px){
-    .slogan{display: none;}
-    .navigation-panel{display: none;}
-
-    .image-button{
-        display: block;
-        margin: 0 20px 0 auto;
-
-        img{
-            font-size: 1.3em;
-        }
+    .header{
+        &__slogan{display: none;}
+        &__nav{display: none;}
+        &__button{display: block; margin: 0 20px 0 auto;}
     }
 }
 
