@@ -15,7 +15,8 @@
     src: url('../font/Montserrat-ExtraBold.ttf')
 }
 
-$back-color: rgb(223, 223, 223);
+$background: rgb(223, 223, 223);
+$headline: #fffffe;
 $grey-black: rgb(26, 25, 25);
 $yellow-color: #ffee57;
 
@@ -27,11 +28,11 @@ $yellow-color: #ffee57;
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: $back-color;
+    background-color: $background;
 }
 
 .header{
-    color: white;
+    color: $headline;
     margin: 0 auto;
     width: 97%;
     height: 80px;
@@ -58,7 +59,6 @@ body{
         color: $yellow-color;
         font-weight: normal;
         font-size: 2em;
-        letter-spacing: 0.5%;
         margin-left: 15px;
     }
 
@@ -91,7 +91,12 @@ body{
         font-size: 1.7em;
     }
 
-    &__button{display: none;}
+    &__button{
+        display: none;
+        img{
+            width: 50px;
+        }
+    }
 }
 
 @media (max-width: 870px){
@@ -104,31 +109,37 @@ body{
 
 li a{color: inherit;}
 
-main{
+.main{
     width: 90%;
     margin: 0 auto;
+
+    &__tagline{
+        display: inline-block;
+        font-size: 1.5em;
+        padding: 10px;
+        color: white;
+        background-color: $grey-black;
+        margin: 2vw auto 2vw auto;
+        box-shadow: 1px 1px 10px;
+    }
 }
 
-.time{
-    display: inline-block;
-    font-size: 1.5em;
-    padding: 10px;
-    color: white;
-    background-color: $grey-black;
-    margin: 2vw auto 2vw auto;
-    box-shadow: 1px 1px 10px;
-}
-
-.container{
-    border: 1px solid #3f4042;
+.block-info{
+    border: 1px solid $grey-black;
     background-color: white;
     box-shadow: 1px 1px 20px;
     margin-bottom: 5vh;
     cursor: pointer;
 
-    .main-phrase{
+    &__subgrid{
+        height: 100%;
+        display: grid;
+        grid-template-rows: 66px;
+    }
+
+    &__main-phrase{
         display: flex;
-        font-family: 'Montserrat-Bold';
+        font-family: 'Montserrat-Bold', serif;
         font-size: 1.8em;
         background-color: $yellow-color;
         text-align: center;
@@ -138,26 +149,28 @@ main{
         padding: 0 10px;
     }
 
-    .text{
+    &__list{
         font-size: 1.2em;
         padding: 7px;
         text-align: left;
+        
+        ul{
+            margin-left: 20px;
+            margin-top: 20px;
+        
+            li{
+                font-size: 1.1em;
+                margin-bottom: 10px;
+                color: black;
+            }
+        
+            li:hover{
+                color: rgb(78, 78, 78);
+            }
+        }
     }
 
-    .subgrid{
-        height: 100%;
-        display: grid;
-        grid-template-rows: 66px;
-    } 
-
-    .abonent-payment{
-        margin-left: auto;
-        margin-right: 20px;
-        font-size: 1.2em;
-        line-height: 1.3em;
-    }
-
-    .bottom-wrapper{
+    &__bottom-wrapper{
         display:flex;
         align-items: center;
         align-self: end;
@@ -166,9 +179,16 @@ main{
             width: 100px;
         }
     }
-}
 
-.yellow-background{background-color: $yellow-color;}
+    &__text{
+        margin-left: auto;
+        margin-right: 20px;
+        font-size: 1.2em;
+        line-height: 1.3em;
+        
+        .yellow-background{background-color: $yellow-color;}
+    }
+}
 
 @media (min-width: 550px){
     .grid-container{
@@ -207,48 +227,27 @@ main{
     }
 }
 
-.adres__contacts{
+.address__contacts{
     font-size: 1.4em;
     line-height: 1.5em;
     padding: 27px 15px 27px 15px; 
 }
 
-.border-botoom__contacts{
-    max-width: 300px;
-    border-bottom: 2px solid black;
-}
-
-.bold{font-family: 'Montserrat-Bold';}
-
-.list-prade{
-    margin-left: 20px;
-    margin-top: 20px;
-
-    li{
-        font-size: 1.1em;
-        margin-bottom: 10px;
-        color: black;
-    }
-
-    li:hover{
-        color: rgb(78, 78, 78);
-    }
-}
+.bold{font-family: 'Montserrat-Bold', serif;}
 
 .main-product{
     max-width: 1000px;
-    margin: 2vw auto;
     box-shadow: 1px 1px 20px;
     padding: 15px;
     background-color: white;
-    margin-bottom: 50px;
+    margin: 2vw auto 50px;
 }
 
 .wrapper-text{
     padding-top:15px; text-align: center;
 
     .bold-name{
-        font-family: 'Montserrat-Bold';
+        font-family: 'Montserrat-Bold', serif;
         font-size: 1.3em;
         margin-bottom: 25px;
     }
@@ -260,12 +259,12 @@ main{
     color: white;
     justify-content: center;
     font-size: 1.1em;
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat-Bold', serif;
 }
 
 .wrapper-payment{
     .second-text{
-        font-family: 'Montserrat-Extra-Bold';
+        font-family: 'Montserrat-Extra-Bold', serif;
         font-size: 1.2em;
     }
 
@@ -350,7 +349,7 @@ main{
                 >div{
                     margin-bottom: 7px;
                     .bold{
-                        font-family: 'Montserrat-Bold';
+                        font-family: 'Montserrat-Bold' , serif;
                     }
                 }
             }
@@ -369,7 +368,7 @@ main{
 }
 
 .product__heading{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat-Bold', serif;
     font-size: 1.5em;
     text-align: center;
     padding: 10px 0 15px 0;
@@ -377,7 +376,7 @@ main{
 }
 
 .naming{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat-Bold', serif;
     font-size: 1.5em;
     text-align: center;
     margin: 15px 0;
@@ -410,7 +409,7 @@ main{
     font-size: 3em;
     position: absolute;
     top: -7px;
-    right: 0px;
+    right: 0;
     transform: rotate(45deg);
 }
 
@@ -433,16 +432,16 @@ main{
 
 .text-protect-school{
     font-size: 1.2em;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
-.list-scool{
+.list-school{
     list-style: square;
     padding:40px;
 }
 
 .span-school{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat-Bold', serif;
 }
 
 .popup-menu{
@@ -481,7 +480,7 @@ main{
                 font-size: 3em;
                 position: absolute;
                 top: -7px;
-                right: 0px;
+                right: 0;
                 transform: rotate(45deg);
             }
 
@@ -489,7 +488,7 @@ main{
                 font-size: 2em;
                 color: white;
                 border-bottom: 2px solid white;
-                padding: 10px 30px 5px 0px;
+                padding: 10px 30px 5px 0;
             }
 
             .list-menu{
@@ -524,14 +523,14 @@ footer{
     background-color: rgb(44, 44, 44);
 }
 
-.list-tovar li{
-    color: rgb(189, 189, 189);
-    font-size: 1.1em;
-    margin-top: 20px;
-}
+.list-product{
+    padding: 30px 0 0 10vw;
 
-.list-tovar{
-    padding: 30px 0px 0px 10vw;
+    li{
+        color: rgb(189, 189, 189);
+        font-size: 1.1em;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 500px) {
