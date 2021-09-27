@@ -72,19 +72,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../font/Montserrat-Regular.ttf");
+  font-family: "proxima";
+  src: url("../font/proxima/ProximaNova-Regular.ttf");
 }
 @font-face {
-  font-family: "Montserrat-Bold";
-  src: url("../font/Montserrat-Medium.ttf");
+  font-family: "proxima-bold";
+  src: url("../font/proxima/ProximaNova-Semibold.ttf");
 }
 @font-face {
-  font-family: "Montserrat-Extra-Bold";
-  src: url("../font/Montserrat-ExtraBold.ttf");
+  font-family: "proxima-Extra-Bold";
+  src: url("../font/proxima-ExtraBold.ttf");
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "proxima", sans-serif;
   background-color: #dfdfdf;
 }
 
@@ -94,7 +94,7 @@ body {
   width: 97%;
   height: 80px;
   background-color: #1a1919;
-  border-bottom: 1px solid #3f4042;
+  border-radius: 0 0 10px 10px;
 }
 .header__body {
   display: -webkit-box;
@@ -116,7 +116,8 @@ body {
 .header__title {
   color: #ffee57;
   font-weight: normal;
-  font-size: 2em;
+  font-size: 2.2em;
+  letter-spacing: 0.5px;
   margin-left: 15px;
 }
 .header__link {
@@ -124,6 +125,7 @@ body {
   bottom: 3px;
 }
 .header__slogan {
+  letter-spacing: 0;
   padding-top: 5px;
   border-top: 1px solid #ffee57;
   font-size: 0.5em;
@@ -187,8 +189,26 @@ li a {
           box-shadow: 1px 1px 10px;
 }
 
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.yellow-block {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  background-color: #ffee57;
+  bottom: -150px;
+  right: -50px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .block-info {
-  border: 1px solid #1a1919;
+  border: 2.5px solid #1a1919;
+  border-radius: 10px;
   background-color: white;
   -webkit-box-shadow: 1px 1px 20px;
           box-shadow: 1px 1px 20px;
@@ -203,11 +223,12 @@ li a {
   grid-template-rows: 66px;
 }
 .block-info__main-phrase {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Montserrat-Bold", serif;
-  font-size: 1.8em;
+  font-family: "proxima-bold", serif;
+  font-size: 2em;
   background-color: #ffee57;
   text-align: center;
   -webkit-box-align: center;
@@ -216,8 +237,9 @@ li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: 1px solid #3f4042;
+  border-bottom: 2px solid #3f4042;
   padding: 0 10px;
+  border-radius: 9px 9px 0 0;
 }
 .block-info__list {
   font-size: 1.2em;
@@ -229,7 +251,7 @@ li a {
   margin-top: 20px;
 }
 .block-info__list ul li {
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: 10px;
   color: black;
 }
@@ -354,7 +376,7 @@ li a {
 }
 
 .bold {
-  font-family: "Montserrat-Bold", serif;
+  font-family: "proxima-Bold", serif;
 }
 
 .main-product {
@@ -371,7 +393,7 @@ li a {
   text-align: center;
 }
 .wrapper-text .bold-name {
-  font-family: "Montserrat-Bold", serif;
+  font-family: "proxima-Bold", serif;
   font-size: 1.3em;
   margin-bottom: 25px;
 }
@@ -384,11 +406,11 @@ li a {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.1em;
-  font-family: "Montserrat-Bold", serif;
+  font-family: "proxima-Bold", serif;
 }
 
 .wrapper-payment .second-text {
-  font-family: "Montserrat-Extra-Bold", serif;
+  font-family: "proxima-Extra-Bold", serif;
   font-size: 1.2em;
 }
 .wrapper-payment .first_text {
@@ -483,7 +505,7 @@ li a {
   margin-bottom: 7px;
 }
 .popup .popup__body .popup__content .wrapper-contacts > div .bold {
-  font-family: "Montserrat-Bold", serif;
+  font-family: "proxima-Bold", serif;
 }
 .popup:target {
   opacity: 1;
@@ -496,7 +518,7 @@ li a {
 }
 
 .product__heading {
-  font-family: "Montserrat-Bold", serif;
+  font-family: "proxima-Bold", serif;
   font-size: 1.5em;
   text-align: center;
   padding: 10px 0 15px 0;
@@ -504,7 +526,7 @@ li a {
 }
 
 .naming {
-  font-family: "Montserrat-Bold", serif;
+  font-family: "proxima-Bold", serif;
   font-size: 1.5em;
   text-align: center;
   margin: 15px 0;
@@ -569,7 +591,7 @@ li a {
 }
 
 .span-school {
-  font-family: "Montserrat-Bold", serif;
+  font-family: "proxima-Bold", serif;
 }
 
 .popup-menu {
@@ -637,13 +659,14 @@ li a {
 }
 
 footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 100px;
   width: 100%;
   padding-bottom: 30px;
   background-color: #2c2c2c;
+  z-index: 9999;
 }
 
 .list-product {
