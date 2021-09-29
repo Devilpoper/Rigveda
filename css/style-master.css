@@ -169,6 +169,36 @@ body {
     display: block;
     margin: 0 20px 0 auto;
   }
+
+  .grid-container-product-button {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3vw 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 3vw;
+  }
+
+  .grid-container-product-button > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .grid-container-product-button > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .grid-container-product-button > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .grid-container-product-button > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
 }
 li a {
   color: inherit;
@@ -315,6 +345,28 @@ li a {
   .grid-container > *:nth-child(6) {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
+  }
+}
+@media (max-width: 550px) {
+  .grid-container-product-button {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .grid-container-product-button > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .grid-container-product-button > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .grid-container-product-button > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
   }
 }
 @media (min-width: 1050px) {
@@ -567,6 +619,27 @@ li a {
 .main-phrase__product {
   width: 97%;
   margin: 20px auto;
+}
+.main-phrase__product___half-width {
+  max-width: 900px;
+  margin: 25px;
+}
+
+@media (min-width: 870px) {
+  .grid-container-product-button {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3vw 1fr 3vw 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3vw;
+  }
+}
+.grid-container-product-button {
+  margin: 0 30px;
+}
+.grid-container-product-button > main {
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .phrase {
