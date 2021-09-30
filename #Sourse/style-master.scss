@@ -34,10 +34,9 @@ body{
 .header{
     color: $headline;
     margin: 0 auto;
-    width: 97%;
+    width: 100%;
     height: 80px;
     background-color: $grey-black;
-    border-radius: 0 0 10px 10px;
 
     &__body{
         display: flex;
@@ -106,6 +105,7 @@ body{
         &__slogan{display: none;}
         &__nav{display: none;}
         &__button{display: block; margin: 0 20px 0 auto;}
+        &__link{top: .5px;}
     }
     .grid-container-product-button{
         display: grid;
@@ -123,13 +123,15 @@ li a{color: inherit;}
     margin: 0 auto;
 
     &__tagline{
+        box-shadow: black 1px 1px 10px;
+        position: relative;
         display: inline-block;
         font-size: 1.5em;
         padding: 10px;
         color: white;
         background-color: $grey-black;
         margin: 2vw auto 2vw auto;
-        box-shadow: 1px 1px 10px;
+        z-index: 1;
     }
 }
 
@@ -146,12 +148,21 @@ li a{color: inherit;}
     background-color: $yellow-color;
     bottom: -150px;
     right: -50px;
-    
     transform: rotate(45deg);
 }
 
+.yellow-block-top{
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    background-color: $yellow-color;
+    top: -150px;
+    left: -50px;
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
 .block-info{
-    border: 2.5px solid $grey-black;
     border-radius: 10px;
     background-color: white;
     box-shadow: 1px 1px 20px;
@@ -165,7 +176,6 @@ li a{color: inherit;}
     }
 
     &__main-phrase{
-        width: 100%;
         display: flex;
         font-family: 'proxima-bold', serif;
         font-size: 2em;
@@ -295,17 +305,19 @@ li a{color: inherit;}
     color: white;
     justify-content: center;
     font-size: 1.1em;
-    font-family: 'proxima-Bold', serif;
+    font-family: 'proxima-bold', serif;
 }
 
 .wrapper-payment{
     .second-text{
-        font-family: 'proxima-Extra-Bold', serif;
+        font-family: 'proxima-bold', serif;
         font-size: 1.2em;
     }
 
     .first_text{
         margin-bottom: 10px;
+        font-family: 'proxima-bold', serif;
+        font-size: 1.3em;
     }
 }
 
@@ -330,6 +342,7 @@ li a{color: inherit;}
         left: 0;
     }
 
+    z-index: 9999;
     position: fixed;
     width: 100%;
     height: 100%;
