@@ -1,0 +1,47 @@
+
+.flex-direction{
+    max-width: 600px;
+    margin: 3vw auto;
+    box-shadow: 1px 1px 10px;
+    background-color: white;
+    position: relative;
+}
+
+.close{
+    font-size: 3em;
+    position: absolute;
+    top: -7px;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.product__heading{
+    font-family: 'proxima-bold', serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px 0 15px 0;
+    border-bottom: 1px solid black;
+}
+
+.naming{
+    font-family: 'proxima-bold', serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.product-image{
+    margin-top: 15px;
+
+    img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    } 
+}
+
+.details-rest{
+    font-size: 1.2em;
+    padding: 20px;
+}
+
