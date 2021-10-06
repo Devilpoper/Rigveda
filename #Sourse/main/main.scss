@@ -106,12 +106,15 @@ $yellow-color: #ffee57;
         }
     }
 
-    &__text{
-        margin-left: auto;
+    &__wrapper{
+        margin-left: 5px;
         margin-right: 20px;
         font-size: 1.2em;
         line-height: 1.3em;
-        
-        .yellow-background{background-color: $yellow-color;}
+    }
+
+    &__text2{
+        display: inline-block;
+        background-color: $yellow-color;
     }
 }

@@ -1,47 +1,51 @@
+.wrapper-main{
+    margin: 3vw;
 
-.flex-direction{
-    max-width: 600px;
-    margin: 3vw auto;
-    box-shadow: 1px 1px 10px;
-    background-color: white;
-    position: relative;
-}
-
-.close{
-    font-size: 3em;
-    position: absolute;
-    top: -7px;
-    right: 0;
-    transform: rotate(45deg);
-}
-
-.product__heading{
-    font-family: 'proxima-bold', serif;
-    font-size: 1.5em;
-    text-align: center;
-    padding: 10px 0 15px 0;
-    border-bottom: 1px solid black;
-}
-
-.naming{
-    font-family: 'proxima-bold', serif;
-    font-size: 1.5em;
-    text-align: center;
-    margin: 15px 0;
-}
-
-.product-image{
-    margin-top: 15px;
-
-    img{
-        display: block;
+    &__body{
         margin: 0 auto;
+        max-width: 600px;
+        background-color: white;
+        box-shadow: 0px 1px 10px;
+        border-radius: 10px;
+    }
+
+    &__content{
+        position: relative;
+        text-align: center;
+    }
+
+    .body-card{
+        padding: 15px 0;
+    }
+
+    .product__heading{
+        font-family: 'proxima-bold', serif;
+        font-size: 1.7em;
+        border-bottom: 2px solid black;
+        padding: 15px;
+    }
+    
+    .naming{
+        font-family: 'proxima-bold', serif;
+        font-size: 1.7em;
+        padding-top: 7px;
+    }
+
+    .details-rest{
+        padding: 10px 5px 10px 15px;
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    .close{
+        position: absolute;
+        top: -3px;
+        right: 7px;
+        font-size: 2.5em;
+        font-family: 'proxima-bold', serif;
+        transform: rotate(45deg);
+    }
+    img{
         max-width: 100%;
-    } 
+    }
 }
-
-.details-rest{
-    font-size: 1.2em;
-    padding: 20px;
-}
-

@@ -23,6 +23,7 @@ $yellow-color: #ffee57;
 %image-template{
     margin-top: 15px;
     background-size: cover;
+    overflow: hidden;
 }
 
 
@@ -33,11 +34,12 @@ body{
 
 @import "main/header.scss";
 @import "main/main.scss";
+@import "main/footer.scss";
 @import "popup/popup-contacts.scss";
 @import "popup/popup-menu.scss";
 @import "product-main.scss";
 @import "cards.scss";
-@import "main/footer.scss";
+
 
 @media (max-width: 870px){
     .header{
@@ -89,11 +91,6 @@ body{
     } 
 }
 
-@media (max-width: 500px) {
-    footer{
-        display: block;
-    }
-}
 
 .heading{
     font-size: 2em;
