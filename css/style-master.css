@@ -633,6 +633,9 @@ body {
 .wrapper-main img {
   max-width: 100%;
 }
+.wrapper-main .product-image__ajax {
+  padding: 0 10px;
+}
 
 @media (max-width: 870px) {
   .header__slogan {

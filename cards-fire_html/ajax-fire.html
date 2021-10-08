@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style-master.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="../css/style-master.css">
+    <link rel="stylesheet" href="../css/animate.css">
 
-    <script src="js/wow.min.js"></script>
+    <script src="../js/wow.min.js"></script>
     <script>new WOW().init();</script>
 
-    <title>Ригведа 0.2</title>
+    <title>Ригведа</title>
 </head>
+
 <body>
+
 <header id="header" class="header">
     <div class="header__body">
 
         <figure class="header__logo">
-            <img class="header__img" src="img/лого.png" alt="Логотип компании">
+            <img class="header__img" src="../img/лого.png" alt="Логотип компании">
         </figure>
 
         <div class="header__title">
-            <a href="index.html" class="header__link">Ригведа</a>
+            <a href="../index.html" class="header__link">Ригведа</a>
             <div class="header__slogan">15 лет на страже вашей безопасности</div>
         </div>
 
@@ -34,64 +36,46 @@
         </nav>
 
         <div class="header__button">
-            <a href="#popup-menu"><img src="img/sidebar.png" alt="sidebar"></a>
+            <a href="#popup-menu"><img src="../img/sidebar.png" alt="sidebar"></a>
         </div>
 
     </div>
 </header>
 
-    <div class="main-phrase__product___half-width fadeIn wow">
-        <div class="main-phrase__text"> 
-            Пожарная сигнализация предназначена для 
-            выявления пожара на начальной стадии 
-            возгорания и передачи сигнала тревоги 
-            на пульт охраны.
+<main>
+    <div class="wrapper-main fadeInUp wow">
+        <div class="wrapper-main__body">
+            <div class="wrapper-main__content">
+                <a href="../product-fire.html" class="close">+</a>
+                <div class="product__heading">Подробнее о комплекте:</div>
+                <div class="body-card">
+                    <div class="product-image"><img src="../img/product/hab.png" alt="ajax-hub"></div>
+                    <div class="naming">Hub</div>
+                    <div class="details-rest"> 
+                        Интеллектуальная централь Hub — 
+                        ключевой элемент системы безопасности
+                        Ajax. Устройство контролирует работу 
+                        всех датчиков Ajax и моментально отправляет 
+                        сигнал тревоги владельцу и на пульт охраны.
+                    </div>
+                </div>
+            
+                <div class="body-card">
+                    <div class="product-image__ajax"><img src="../img/product/FP_B-1x.jpg" alt="ajax-motion-protect"></div>
+                    <div class="naming">Fire Protect</div>
+                    <div class="details-rest"> 
+                        Пожарный датчик с сенсором 
+                        температуры круглосуточно следит 
+                        за безопасностью в помещении и 
+                        моментально сообщает о появлении 
+                        дыма и резких скачках температуры.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</main>  
 
-    <div class="grid-container-product-button">
-    <main class="main-block fadeInUp wow">
-        <div class="main-block__image-product"><img src="img/product/c-nord-fire.png" alt="c-nord mini"></div>
-        <div class="main-block__wrapper-text">
-            <div class="bold-name">C.Nord</div>
-            <div class="flex-text-bt">
-                <div class="wrapper-payment">
-                    <div class="first_text">Комплект с установкой:</div>
-                    <div class="second-text">Цена договорная</div>
-                </div>  
-                <button class="details" onclick="location.href='cards-fire_html/c-nord-fire.html';">Подробнее</button>
-            </div>
-        </div>
-    </main>
-
-    <main class="main-block fadeInUp wow">
-        <div class="main-block__image-product"><img class="atribute" src="img/product/fire-kontact.png" alt="c-nord mini"></div>
-        <div class="main-block__wrapper-text">
-            <div class="bold-name">Ритм</div>
-            <div class="flex-text-bt">
-                <div class="wrapper-payment">
-                    <div class="first_text">УКомплект с установкой:</div>
-                    <div class="second-text">Цена договорная</div>
-                </div>  
-                <button class="details" onclick="location.href='cards-fire_html/ritm-fire.html';">Подробнее</button>
-            </div>
-        </div>
-    </main>
-
-    <main class="main-block fadeInUp wow">
-        <div class="main-block__image-product"><img class="atribute" src="img/product/ajax-fire.png" alt="c-nord mini"></div>
-        <div class="main-block__wrapper-text">
-            <div class="bold-name">Аякс</div>
-            <div class="flex-text-bt">
-                <div class="wrapper-payment">
-                    <div class="first_text">Комплект с установкой:</div>
-                    <div class="second-text">Цена договорная</div>
-                </div>  
-                <button class="details" onclick="location.href='cards-fire_html/ajax-fire.html';">Подробнее</button>
-            </div>
-        </div>
-    </main>
-</div>
 <footer class="footer">
     <div class="footer__text">
         <ul class="footer__list-product">
@@ -158,5 +142,6 @@
         </div>
     </div>
 </div>
+    
 </body>
 </html>
