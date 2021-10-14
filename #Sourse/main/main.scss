@@ -22,9 +22,18 @@ $yellow-color: #ffee57;
     }
 }
 
+.all-wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-wrapper-flex{
+    flex: 1 1 auto;
+}
 .wrapper{
     position: relative;
-    width: 100%;
+    min-height: 100%;
     overflow: hidden;
     
     &__yellow-block{
@@ -55,7 +64,7 @@ $yellow-color: #ffee57;
     box-shadow: 1px 1px 20px;
     margin-bottom: 5vh;
     cursor: pointer;
-
+    
     &__subgrid{
         height: 100%;
         display: grid;

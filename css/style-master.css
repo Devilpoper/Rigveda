@@ -88,6 +88,7 @@ li a {
   src: url("../font/proxima-ExtraBold.ttf");
 }
 body {
+  height: 100%;
   font-family: "proxima", sans-serif;
   background-color: #dfdfdf;
 }
@@ -178,9 +179,26 @@ body {
   z-index: 1;
 }
 
+.all-wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-wrapper-flex {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .wrapper {
   position: relative;
-  width: 100%;
+  min-height: 100%;
   overflow: hidden;
 }
 .wrapper__yellow-block {
