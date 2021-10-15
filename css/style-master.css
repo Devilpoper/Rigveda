@@ -205,7 +205,7 @@ body {
   position: absolute;
   width: 200px;
   height: 400px;
-  background-color: #ffee57;
+  background-color: #fdef6b;
   bottom: -150px;
   right: -50px;
   -webkit-transform: rotate(45deg);
@@ -215,7 +215,7 @@ body {
   position: absolute;
   width: 200px;
   height: 400px;
-  background-color: #ffee57;
+  background-color: #fdef6b;
   top: -150px;
   left: -50px;
   -webkit-transform: rotate(45deg);
@@ -244,7 +244,7 @@ body {
   display: flex;
   font-family: "proxima-bold", serif;
   font-size: 2em;
-  background-color: #ffee57;
+  background-color: #fdef6b;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -295,7 +295,7 @@ body {
 }
 .block-info__text2 {
   display: inline-block;
-  background-color: #ffee57;
+  background-color: #fdef6b;
 }
 
 .block-info__wrapper-list .topmenu {
@@ -568,7 +568,7 @@ body {
   font-size: 1.2em;
   display: inline-block;
   padding: 3px;
-  background-color: #ffee57;
+  background-color: #fdef6b;
 }
 .main-block .first_text {
   margin-bottom: 10px;
