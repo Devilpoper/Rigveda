@@ -35,6 +35,12 @@
         padding: 10px 5px 10px 15px;
         font-size: 1.3em;
         text-align: left;
+        &___line-height{
+            padding: 10px 5px 10px 15px;
+            line-height: 20px;
+            text-align: left;
+            font-size: 1.3em;
+        }
     }
 
     .close{

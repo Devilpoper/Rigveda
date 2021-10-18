@@ -536,7 +536,7 @@ body {
   max-width: 1000px;
   -webkit-box-shadow: 1px 1px 20px;
           box-shadow: 1px 1px 20px;
-  padding: 15px;
+  padding: 10px;
   background-color: white;
   margin: 2vw auto 50px;
 }
@@ -546,6 +546,12 @@ body {
 .main-block__wrapper-text {
   padding-top: 15px;
   text-align: center;
+}
+.main-block .paragraph {
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 20px;
+  margin-bottom: 15px;
 }
 .main-block .bold-name {
   font-family: "proxima-Bold", serif;
@@ -562,13 +568,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.main-block .second-text {
-  font-family: "proxima-bold", serif;
-  font-size: 1.2em;
-  display: inline-block;
-  padding: 3px;
-  background-color: #fdef6b;
 }
 .main-block .first_text {
   margin-bottom: 10px;
@@ -599,6 +598,38 @@ body {
 .main-phrase__product___half-width {
   max-width: 900px;
   margin: 25px;
+}
+
+.limiter-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.limiter-align .main-heading {
+  display: inline-block;
+  padding: 3vw 10px 7px 10px;
+  font-size: 2em;
+  font-family: "proxima-bold", sans-serif;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.yellow-text {
+  font-family: "proxima-bold", serif;
+  font-size: 1.2em;
+  display: inline-block;
+  padding: 3px;
+  background-color: #fdef6b;
+}
+
+.video {
+  font-size: 1em;
 }
 
 .grid-container-product-button__main-page {
@@ -638,6 +669,12 @@ body {
   padding: 10px 5px 10px 15px;
   font-size: 1.3em;
   text-align: left;
+}
+.wrapper-main .details-rest___line-height {
+  padding: 10px 5px 10px 15px;
+  line-height: 20px;
+  text-align: left;
+  font-size: 1.3em;
 }
 .wrapper-main .close {
   position: absolute;
@@ -809,7 +846,7 @@ body {
 }
 
 .grid-container-product-button {
-  margin: 0 30px;
+  margin: 10px 20px;
 }
 .grid-container-product-button > main {
   border-radius: 10px;

@@ -7,7 +7,7 @@
     border: 1px solid black;
     max-width: 1000px;
     box-shadow: 1px 1px 20px;
-    padding: 15px;
+    padding: 10px;
     background-color: white;
     margin: 2vw auto 50px;
 
@@ -16,6 +16,13 @@
     &__wrapper-text{
         padding-top:15px; 
         text-align: center;
+    }
+
+    .paragraph{
+        font-size: 1.3em;
+        text-align: left;
+        line-height: 20px;
+        margin-bottom: 15px;
     }
 
     .bold-name{
@@ -28,14 +35,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .second-text{
-        font-family: 'proxima-bold', serif;
-        font-size: 1.2em;
-        display: inline-block;
-        padding: 3px;
-        background-color: $yellow-color;
     }
 
     .first_text{
@@ -70,6 +69,33 @@
         max-width: 900px;
         margin: 25px;
     }
+}
+
+.limiter-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main-heading{
+        display: inline-block;
+        padding: 3vw 10px 7px 10px;
+        font-size: 2em;
+        font-family: 'proxima-bold', sans-serif;
+        text-align: center;
+        border-bottom: 2px solid black;
+    }
+}
+
+.yellow-text{
+    
+    font-family: 'proxima-bold', serif;
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 3px;
+    background-color: $yellow-color;
+}
+.video{
+    font-size: 1em;
 }
 
 .grid-container-product-button__main-page{
