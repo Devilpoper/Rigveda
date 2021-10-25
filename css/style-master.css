@@ -200,6 +200,10 @@ body {
   position: relative;
   min-height: 100%;
   overflow: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .wrapper__yellow-block {
   position: absolute;
@@ -539,6 +543,10 @@ body {
   padding: 10px;
   background-color: white;
   margin: 2vw auto 50px;
+}
+.main-block__image-product {
+  border-radius: 10px;
+  overflow: hidden;
 }
 .main-block__image-product img {
   width: 100%;

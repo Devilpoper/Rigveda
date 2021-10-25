@@ -31,10 +31,14 @@ $yellow-color: #fdef6b;
 .main-wrapper-flex{
     flex: 1 1 auto;
 }
+
 .wrapper{
     position: relative;
     min-height: 100%;
     overflow: hidden;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
     
     &__yellow-block{
         position: absolute;

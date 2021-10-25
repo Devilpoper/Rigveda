@@ -30,7 +30,7 @@ $yellow-color: #ffee57;
 body{
     height: 100%;
     font-family: 'proxima', sans-serif;
-    background-color: $background;
+    background-color: $background; 
 }
 
 @import "main/header.scss";

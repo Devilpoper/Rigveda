@@ -11,7 +11,12 @@
     background-color: white;
     margin: 2vw auto 50px;
 
-    &__image-product{img{width: 100%;}}
+    &__image-product{
+        border-radius: 10px;
+        overflow: hidden;
+        
+        img{width: 100%;}
+    }
 
     &__wrapper-text{
         padding-top:15px; 
