@@ -31,6 +31,8 @@ body{
     height: 100%;
     font-family: 'proxima', sans-serif;
     background-color: $background; 
+    max-width: 100%;
+    overflow-x: hidden; 
 }
 
 @import "main/header.scss";

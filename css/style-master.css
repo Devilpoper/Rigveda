@@ -91,6 +91,8 @@ body {
   height: 100%;
   font-family: "proxima", sans-serif;
   background-color: #dfdfdf;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -358,22 +360,43 @@ body {
 }
 
 .footer {
-  background-color: #2b2a2a;
-}
-.footer__text {
-  font-size: 1.3em;
   color: #888888;
-  padding: 20px 5vw;
+  background-color: #2b2a2a;
+  font-size: 1.3em;
 }
-.footer__list-product > li {
-  padding-bottom: 3px;
+.footer__body {
+  padding: 15px 10vw;
+}
+.footer__content > div {
+  margin: 15px 0 0 -17px;
+}
+.footer__wrapper-info-app {
+  width: 300px;
+  color: white;
+}
+.footer__wrapper-info-app .footer__google-play {
+  width: 150px;
+  margin-top: 10px;
+}
+.footer__wrapper-info-app img {
+  width: 100%;
+}
+.footer__legal-text {
+  border-top: 1px solid #5a5a5a;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 0.8em;
+  color: #5a5a5a;
 }
 
-@media (min-width: 500px) {
-  .footer {
+@media (min-width: 862px) {
+  .footer__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .footer__content > div {
+    margin: 15px 0 0 5vw;
   }
 }
 .popup {
