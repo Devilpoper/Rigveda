@@ -67,7 +67,6 @@ $yellow-color: #fdef6b;
     background-color: white;
     box-shadow: 1px 1px 20px;
     margin-bottom: 5vh;
-    cursor: pointer;
     
     &__subgrid{
         height: 100%;
@@ -92,6 +91,7 @@ $yellow-color: #fdef6b;
         font-size: 1.2em;
         padding: 7px;
         text-align: left;
+       
         
         ul{
             margin-left: 20px;
@@ -101,6 +101,7 @@ $yellow-color: #fdef6b;
                 font-size: 1.2em;
                 margin-bottom: 10px;
                 color: black;
+                cursor: pointer;
             }
         
             li:hover{
@@ -156,12 +157,12 @@ $yellow-color: #fdef6b;
         background-color: white;
         border-radius: 10px;
         border: 1px solid black;
-        li{padding: 5px;}
+        li{padding: 5px;  cursor: pointer;}
         li:hover{background-color: $background;}
     } 
 
     .protect:hover .submenu1{
-        display: inline-block;
+        display: block;
     }
     .protect:hover .transform-list{
         transition: all 0.8s;
@@ -180,4 +181,8 @@ $yellow-color: #fdef6b;
     display: inline-block;
     font-family: 'proxima-bold', serif;
     transform: rotate(90deg);
+}
+
+.triangle{
+    font-family: sans-serif;
 }

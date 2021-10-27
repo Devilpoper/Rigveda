@@ -31,6 +31,9 @@
         font-size: 0.8em;
         color: rgb(90, 90, 90);
     }
+    &__list-product:hover{
+        cursor: pointer;
+    }
 }
 
 @media (min-width: 862px) {
