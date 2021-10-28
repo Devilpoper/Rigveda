@@ -42,6 +42,7 @@ body{
 @import "popup/popup-menu.scss";
 @import "product-main.scss";
 @import "cards.scss";
+@import "about-us.scss";
 
 
 @media (max-width: 870px){
@@ -57,6 +58,16 @@ body{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-column-gap: 3vw;
+    }
+
+    .main-about-us{
+        &__content-grid{
+            display: block;
+        }
+
+        &__column1{
+            display: none;
+        }
     }
 }
 

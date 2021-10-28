@@ -1,0 +1,12 @@
+.main-about-us__BODY {
+  padding: 15px 15vw;
+}
+.main-about-us__content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 3fr;
+  grid-template-columns: 1fr 3fr;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
