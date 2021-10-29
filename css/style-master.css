@@ -760,8 +760,20 @@ body {
 }
 .main-about-us__main-text {
   letter-spacing: normal;
-  font-size: 1.3em;
+  font-size: 1.4em;
   padding: 15px 0 0 10px;
+  line-height: 25px;
+}
+.main-about-us .main-text__about-us {
+  text-indent: 40px;
+  margin-bottom: 10px;
+}
+.main-about-us .main-text__about-us___bold {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.main-about-us .list-indent {
+  padding-left: 50px;
 }
 
 @media (max-width: 870px) {

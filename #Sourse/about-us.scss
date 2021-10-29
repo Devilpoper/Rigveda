@@ -29,7 +29,20 @@
 
     &__main-text{
         letter-spacing: normal;
-        font-size: 1.3em;
+        font-size: 1.4em;
         padding: 15px 0 0 10px;
+        line-height: 25px;
+        
+    }
+    .main-text__about-us{
+        text-indent: 40px;
+        margin-bottom: 10px;
+        &___bold{
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+    }
+    .list-indent{
+        padding-left: 50px;
     }
 }
