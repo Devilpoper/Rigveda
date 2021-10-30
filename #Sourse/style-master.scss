@@ -40,6 +40,7 @@ body{
 @import "main/footer.scss";
 @import "popup/popup-contacts.scss";
 @import "popup/popup-menu.scss";
+@import "popup/popup-vacancies.scss";
 @import "product-main.scss";
 @import "cards.scss";
 @import "about-us.scss";
@@ -63,6 +64,10 @@ body{
     .main-about-us{
         &__content-grid{
             display: block;
+        }
+
+        &__body{
+            padding: 5vw 5vw;
         }
 
         &__column1{

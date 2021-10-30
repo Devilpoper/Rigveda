@@ -1,6 +1,6 @@
-.popup{
-    z-index: 9999;
+.popup-vac{
     position: fixed;
+    z-index: 9999;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -11,7 +11,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.8s ease 0s;
-    
+
     &__area{
         position: absolute;
         width: 100%;
@@ -48,28 +48,24 @@
         transform: rotate(45deg);
     }
 
-    &__wrapper-contacts{
-        font-size: 1.4em;
-        padding: 27px 0 27px 15px;
-        max-width: 300px;
-        border-bottom: 2px solid black;
-    
-        >div{
-            margin-bottom: 7px;
-            .bold{font-family: 'proxima-bold' , serif;}
-        }
-    }
-    
-    &__adres-contacts{
+    &__main-text{
+        padding: 20px;
         font-size: 1.4em;
         line-height: 1.5em;
-        padding: 27px 15px 27px 15px; 
+    }
+
+    .list-padding-left{
+        padding-left: 20px;
+    }
+
+    .bold{
+        font-family: 'proxima-bold', sans-serif;
     }
 
     &:target{
         opacity: 1;
         visibility: visible;
-        .popup__content{  
+        .popup-vac__content{  
             transform: translate(0px,0px);
             opacity: 1;
         }

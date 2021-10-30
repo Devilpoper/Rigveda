@@ -231,6 +231,7 @@ body {
 
 .block-info {
   border-radius: 10px;
+  border: 1px solid black;
   background-color: white;
   -webkit-box-shadow: 1px 1px 20px;
           box-shadow: 1px 1px 20px;
@@ -429,13 +430,6 @@ body {
   top: 0;
   left: 0;
 }
-.popup__area {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
 .popup__body {
   min-height: 100%;
   display: -webkit-box;
@@ -559,6 +553,83 @@ body {
   visibility: visible;
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
+}
+
+.popup-vac {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.popup-vac__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.popup-vac__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+.popup-vac__content {
+  background-color: #dfdfdf;
+  max-width: 600px;
+  height: 100%;
+  padding: 15px 10px 10px 10px;
+  border-radius: 10px;
+  position: relative;
+  -webkit-transform: translate(0px, -100%);
+          transform: translate(0px, -100%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.popup-vac__close {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  font-size: 3em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.popup-vac__main-text {
+  padding: 20px;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+.popup-vac .list-padding-left {
+  padding-left: 20px;
+}
+.popup-vac .bold {
+  font-family: "proxima-bold", sans-serif;
+}
+.popup-vac:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-vac:target .popup-vac__content {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .main-product {
@@ -753,7 +824,7 @@ body {
 }
 .main-about-us__header {
   text-align: center;
-  font-family: "proxima-Extra-Bold", sans-serif;
+  font-family: "proxima-bold", sans-serif;
   font-size: 2em;
   padding-bottom: 15px;
   border-bottom: 2px solid black;
@@ -823,6 +894,9 @@ body {
 
   .main-about-us__content-grid {
     display: block;
+  }
+  .main-about-us__body {
+    padding: 5vw 5vw;
   }
   .main-about-us__column1 {
     display: none;
