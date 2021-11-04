@@ -362,7 +362,14 @@ body {
 }
 
 .triangle {
+  position: relative;
+  top: 2px;
   font-family: sans-serif;
+}
+
+.console-sec {
+  font-size: 1.4em;
+  padding-bottom: 10px;
 }
 
 .footer {
@@ -781,7 +788,7 @@ body {
   text-align: left;
 }
 .wrapper-main .details-rest___line-height {
-  padding: 10px 5px 10px 15px;
+  padding: 15px 20px;
   line-height: 20px;
   text-align: left;
   font-size: 1.3em;
@@ -800,6 +807,14 @@ body {
 }
 .wrapper-main .product-image__ajax {
   padding: 0 10px;
+}
+.wrapper-main .product-image {
+  margin: 10px 20px 15px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wrapper-main .list-padding-left {
+  padding-left: 20px;
 }
 
 .main-about-us__body {

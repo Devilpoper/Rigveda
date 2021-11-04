@@ -92,8 +92,7 @@ $yellow-color: #fdef6b;
         font-size: 1.2em;
         padding: 7px;
         text-align: left;
-       
-        
+
         ul{
             margin-left: 20px;
             margin-top: 20px;
@@ -185,5 +184,12 @@ $yellow-color: #fdef6b;
 }
 
 .triangle{
+    position: relative;
+    top: 2px;
     font-family: sans-serif;
+}
+
+.console-sec{
+    font-size: 1.4em;
+    padding-bottom: 10px;
 }

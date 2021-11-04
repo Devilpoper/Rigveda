@@ -36,7 +36,7 @@
         font-size: 1.3em;
         text-align: left;
         &___line-height{
-            padding: 10px 5px 10px 15px;
+            padding: 15px 20px;
             line-height: 20px;
             text-align: left;
             font-size: 1.3em;
@@ -55,4 +55,13 @@
         max-width: 100%;
     }
     .product-image__ajax{padding: 0 10px;}
+    .product-image{
+        margin: 10px 20px 15px 20px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .list-padding-left{
+        padding-left: 20px;
+    }
 }
