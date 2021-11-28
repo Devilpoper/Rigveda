@@ -820,6 +820,7 @@ body {
 }
 .main-about-us__content-grid {
   padding: 20px;
+  text-align: justify;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 3fr;
@@ -858,6 +859,13 @@ body {
 }
 .main-about-us .list-indent {
   padding-left: 50px;
+}
+.main-about-us .documents {
+  margin-top: 10px;
+}
+.main-about-us .documents a {
+  font-size: 1.2em;
+  color: blue;
 }
 
 @media (max-width: 870px) {
@@ -907,6 +915,8 @@ body {
 
   .main-about-us__content-grid {
     display: block;
+    text-align: left;
+    padding: 20px 5px 20px 20px;
   }
   .main-about-us__body {
     padding: 5vw 5vw;

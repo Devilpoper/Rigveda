@@ -5,6 +5,7 @@
 
     &__content-grid{
         padding: 20px;
+        text-align: justify;
         display: grid;
         grid-template-columns: 1fr 3fr;
         column-gap: 20px;
@@ -44,5 +45,12 @@
     }
     .list-indent{
         padding-left: 50px;
+    }
+    .documents{
+        margin-top: 10px;
+        a{
+            font-size: 1.2em;
+            color: blue;
+        }
     }
 }

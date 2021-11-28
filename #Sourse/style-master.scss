@@ -64,6 +64,8 @@ body{
     .main-about-us{
         &__content-grid{
             display: block;
+            text-align: left;
+            padding: 20px 5px 20px 20px;
         }
 
         &__body{
