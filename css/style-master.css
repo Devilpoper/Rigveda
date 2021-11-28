@@ -751,6 +751,10 @@ body {
   margin: 0 20px;
 }
 
+.list-school {
+  padding: 10px 0 10px 50px;
+}
+
 .wrapper-main {
   margin: 3vw;
 }
